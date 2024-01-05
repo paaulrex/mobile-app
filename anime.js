@@ -63,10 +63,10 @@ function addAnimeinList(anime) {
     newAnimeList.textContent = animeVal
 
     newAnimeList.addEventListener("dblclick", function() {
-        let location = ref(database, `anime/${animeID}`)
+        let animeLocation = ref(database, `anime/${animeID}`)
         
         // Removes item from list and database
-        remove(location) 
+        remove(animeLocation) 
     })
 
     animeListEl.append(newAnimeList)

@@ -63,10 +63,10 @@ function addMoviesList(movies) {
     newMoviesList.textContent = moviesVal
 
     newMoviesList.addEventListener("dblclick", function() {
-        let location = ref(database, `movies/${moviesID}`)
+        let moviesLocation = ref(database, `movies/${moviesID}`)
         
         // Removes item from list and database
-        remove(location) 
+        remove(moviesLocation) 
     })
 
     moviesList.append(newMoviesList)

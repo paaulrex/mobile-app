@@ -63,10 +63,10 @@ function addTVShowList(tvShows) {
     newTVShowList.textContent = tvShowVal
 
     newTVShowList.addEventListener("dblclick", function() {
-        let location = ref(database, `tv-show/${tvShowID}`)
+        let tvLocation = ref(database, `tv-show/${tvShowID}`)
         
         // Removes item from list and database
-        remove(location) 
+        remove(tvLocation) 
     })
 
     tvShowList.append(newTVShowList)

@@ -63,10 +63,10 @@ function addVideoGamesList(videoGames) {
     newVideoGamesList.textContent = videoGamesVal
 
     newVideoGamesList.addEventListener("dblclick", function() {
-        let location = ref(database, `video-games/${videoGamesID}`)
+        let videoGamesLocation = ref(database, `video-games/${videoGamesID}`)
         
         // Removes item from list and database
-        remove(location) 
+        remove(videoGamesLocation) 
     })
 
     videoGamesList.append(newVideoGamesList)
